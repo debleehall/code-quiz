@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <div class="scores"><a href="highscores.html"></a>
+        View High Scores
+    </div>
+
+    <div class="timer">
+        Time:<span id="time">60</span>
+    </div>
+
+    <div class="wrapper">
+        <div id="start" class="start">
+            <h1>Test Your Coding Knowledge</h1>
+            <p>
+                Try to answer the following code-related questions within the time limit.
+                Watch Out! Incoorect questions will penalize your time by 10 seconds!
+            </p>
+            <div>
+                <button id="start-btn">Start Quiz</button>
+            </div>
+        </div>
+
+        <div id="questions" class="hide">
+            <h2 id="question">Questions</h2>
+            <div>
+                <button class="btn" id="btn-1">1. </button>
+                <button class="btn" id="btn-2">2. </button>
+                <button class="btn" id="btn-3">3. </button>
+                <button class="btn" id="btn-4">4. </button>
+            </div>
+        </div>
+
+        <div id="end" class="hide">
+            <h2>Your Done!</h2>
+            <p>Your final score is <span id="score"></span></p>
+            <p>
+                Enter your initals:
+                <form>
+                    <input type="text" name="initals" id="initals" placeholder="Enter Here" />
+                </form>
+            </p>
+            <div>
+                <button id="submit" class="submit" onclick="saveHighScore(event)">Submit</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
