@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --dark-blue: #35cde2;
+    --light-blue: #19dbf6;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.start-screen {
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper, .hs-wrapper {
+    max-width: 33%;
+    justify-content: center;
+    text-align: center;
+    margin: 200px auto;
+}
+
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+.h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#p {
+    font-size: 18px;
+    margin: 20px auto;
+    padding: auto;
+    font-style: italic;
+    color: lightgray;
+}
+
+#start-btn {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.back-btn, .score-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#btn1, #btn2, #btn3, #btn4, .submit, .back-btn, .score-btn {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 10px 50px;
+    font-size: 16px;
+    border-radius: 12px;
+    text-align: left;
+    align-content: flex-start;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, .start-btn:hover, .submit:hover, .back-btn:hover, .score-btn:hover {
+    background-color:var(--light-blue);
+}
+
+a {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.scores {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    
+}
+
+.timer {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+#end-screen, .hs-screen {
+    text-align: left;
+    font-size: 18;
+}
+
+input {
+    border-radius: 1px;
+    border: solid;
+}
+
+#highScoreList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.form {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 200px auto;
+}
